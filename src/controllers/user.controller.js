@@ -319,7 +319,7 @@ const updateUserAvatar = asyncHandler(async(req, res) => {
 
         {
             $set: {
-                avatar: avatar.url
+                avatar: avatar.url   // not an object, just the URL string
             }
         },
         {new: true}
@@ -470,7 +470,7 @@ const getWatchHistory = asyncHandler(async(req, res) => {
                     {
                         $addFields: {
                             owner: {
-                                $first: "owner"
+                                $first: "$owner"
                             }
                         }
                     }

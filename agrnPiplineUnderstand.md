@@ -197,7 +197,7 @@ One user object, shaped like this:
 
 ---
 # for watchhistory
-## 🔁 Your Schema Recap (Important for Understanding Logic)
+##  Schema Recap (Important for Understanding Logic)
 
 ```js
 watchHistory: [
