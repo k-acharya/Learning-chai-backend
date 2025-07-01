@@ -268,7 +268,7 @@ const changeCurrentPassword = asyncHandler(async(req, res) => {
 
 
 //agar user logedin ha toh usko me 2 minute me currentuser desakta hun: bcz middleware me humne already pur user ko req.user me dhal dia ha
-const getCurrentUser = asyncHandler(async(res, req) => {
+const getCurrentUser = asyncHandler(async(req, res) => {
     return res
     .status(200)
     .json(new ApiResponse(200, req.user, "current user fetched successfully"))
